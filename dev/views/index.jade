@@ -1,0 +1,26 @@
+include ./common/component
+
+extends layout/default.jade
+
+block head  
+  title index
+  +css("./css/index.css")
+  +js("./js/index.js")
+  
+block content
+  .table-view#container
+    each section in [1,2]
+      .section
+        h2.header header
+        ul.cells
+          each cell in [1,2,3]
+            li.cell
+              a
+                .navigate-right
+                span
+                  .pull-left.icon
+                    img(src='http://www.publicworkspartners.com/wp-content/uploads/2014/05/facebook-icon.png')
+                label.label text
+
+
+

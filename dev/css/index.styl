@@ -1,0 +1,61 @@
+global-reset()
+
+@import "common/*"
+body
+  background-color:#efeff4
+
+.table-view
+  box-sizing:border-box
+  width:100%
+  padding:36px 0px
+  font-size:18px
+  .section
+    margin-bottom:30px
+  .header, .footer
+    margin-left:18px
+    color:#6d6d72
+    font-size:15px
+  .header
+    margin-bottom:6px
+  .footer
+    margin-top:6px
+  .cells
+    .cell
+      border-top:1px solid #c8c7cc
+      background-color:#ffffff
+      padding:0px 18px
+      height:44px
+      line-height:44px
+      color:#444444
+      &:hover
+        background-color:#efefef
+      &:last-child
+        border-bottom:1px solid #c8c7cc
+      .pull-left
+        float:left
+      .pull-right
+        folat:right
+      .icon
+        margin-top:7px
+        margin-right:10px
+        height:28px
+        width:28px
+        img
+          border-radius:6px
+          width:100%
+          height:100%
+      .value
+        float:right
+      input
+        background-color:transparent
+        font-size:18px
+        text-align:right
+        border:none
+        height:40px
+        width:200px
+      .navigate-right
+        float:right
+        content:">"
+        margin-left:10px
+
+      
